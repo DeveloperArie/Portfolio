@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>DevAri</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" 
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" /> 
+        <link href="https://fonts.googleapis.com/css2?family=Electrolize&family=Poppins&family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo"><a href="index.html" class="logo__link">Ari.js</a></div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <section class="intro">
+            <h1 class="section__title section__title--intro">
+                <strong> Spellbreak Arena 2D </strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">A 2D arena game</p>
+            <img src="img/Spellbreak-Arean2D.png" alt="Screenshot of spellbreak game" class="intro__img">
+        </section>
+
+        <div class="portfolio-item-individual">
+            <p>
+                This game was based of the original version of Spellbreak which was in 3D and inspired me to make a 2D version because of its unique style and fun mechanics. 
+                The way I started off my project was by creating a class based system for all the objects in the game. These objects included players, projectiles, obstacles, and consumables. 
+                This way I could structure the game while maintaining flexibility if something new needs to be added to a class. Once I had the classes set up, the next step for me was to start adding 
+                functionality as well as working with canvas. In the single player version, everything was going smooth. I was able to 
+                create functional collision detections for all the objects, create event listners to listen for movement and mouse position, and to draw everything
+                on the canvas in their correct position and angles.
+            </p>
+            <p>
+                Although the game worked in single player, I wanted to try to make it multiplayer as it would be hard for 2 people to play on one computer. After this decision, 
+                I learned that I had to restructure the whole architecture and assign roles to what the server should be doing 
+                along with the client. To implement this communication I used Socket.io and Express. I set it up so that the client would listent to user events and share them
+                with the server through designated sockets. The server would take that data, run it through the games logic, and then update the rest of the clients
+                with a tick rate of about 33. This means it would be sending 33 updates per second. Finally, the client side would render everything using canvas for that specific client by using
+                socket ID's. I encountered a few bugs such as my collision detection breaking. I wasn't sure why this was because I was checking for every player in the game but after 
+                some debugging I realized that every client needs to check for its own collisions as well due to server-client structure. This showed me how
+                important it is to have a proper archtecture when dealing with servers. I had a lot fun making this game and it showed me the potential there is in combining front-end
+                and back-end for creating applications.
+            </p>
+
+            <p>Check out my site on netlify: <a href="https://tranquil-starship-00cc64.netlify.app/">Spellbreak Arena 2D Multiplayer</a></p>
+        </div>
+
+        <footer class="footer">
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/arie-bolotin/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="mailto:abolotin88@gmail.com">
+                        <i class="fa fa-envelope"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/SouthernGun">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        <script src="js/index.js"></script>
+    </body>
+</html>
