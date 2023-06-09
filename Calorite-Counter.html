@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>DevAri</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" 
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" /> 
+        <link href="https://fonts.googleapis.com/css2?family=Electrolize&family=Poppins&family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo"><a href="index.html" class="logo__link">Ari.js</a></div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <section class="intro">
+            <h1 class="section__title section__title--intro">
+                <strong> Calorie Tracker </strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">A simple app to keep track of daily calories</p>
+            <img src="img/Calorie-Tracker.png" alt="First page of coffee website" class="intro__img">
+        </section>
+
+        <div class="portfolio-item-individual">
+            <p>
+                With this project I tried to make an application that could connect to an external API to retreive relevant calorie information
+                from different foods searched. Along with this I used Chart.js and React Calandar to assist the user in keeping track of how many calories
+                they are consuiming on a daily basis. 
+            </p>
+            <p>
+                This was one of my first projects where I used the React framework to design the structure of the site. I'm still pretty new to React so
+                dealing with components and passing props felt a bit tricky at first. However, as the app was being fleshed out, I found that dealiong with
+                components was an organized way of structuring an app. I could see how with larger projects this could prove to be useful but with smaller
+                apps it felt a bit cumbersome. The external librairies I used also came with their own CSS so it was a learning experience on how I can make
+                external code blend and work with my own. I am happy I kept this app simple as I experimented with many new concepts which could have made things
+                very complcated for me. Overall, I am happy that the app fulfills its purpose and I am happy that I got exposure to many React concepts. 
+            </p>
+            <p>Check out my site on netlify: <a href="https://bright-blancmange-382f2d.netlify.app/">Calaorie-Tracker</a></p>
+        </div>
+
+        <footer class="footer">
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/arie-bolotin/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="mailto:abolotin88@gmail.com">
+                        <i class="fa fa-envelope"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/SouthernGun">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        <script src="js/index.js"></script>
+    </body>
+</html>

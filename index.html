@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>DevAri</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" 
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" /> 
+        <link href="https://fonts.googleapis.com/css2?family=Electrolize&family=Poppins&family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo"><a href="#home" class="logo__link">Ari.js</a></div>
+            <button class="nav-toggle" aria-label="toggle navigation" >
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Portfolio</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi, I am <strong> Ari Bolotin </strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">front-end dev</p>
+            <img src="img/Outside-home-2.jpg" alt="Outside of my home" class="intro__img">
+        </section>
+        <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">What I do</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>UI Design</h3>
+                    <p>I can help brainstorm an awesome design with you for your cool web ideas! Through my time 
+                        at Scrimba I have learned proper UI and UX fundementals which will help boost the user experience for ultimate 
+                        viewing pleasure.
+                    </p>
+                </div> 
+                
+                <div class="service">
+                    <h3>Development</h3>
+                    <p>Once a design has been decided on, I will use my technical skills with javascript to make your dream 
+                        a reality! I enjoy coming up with effective solutions for bringing life and functionality to a stunning design. 
+                    </p>
+                </div> 
+                <div class="service">
+                    <h3>Problem Solving</h3>
+                    <p>Unfortunately, developing is not always a smooth process. I have learned how to effectively break down large and tricky 
+                        problems into a small and managable state where the development process can get back on track.
+                    </p>
+                </div>   
+            </div>
+            <a href="#work" class="btn">My Work</a>
+        </section> 
+        <!-- About me -->
+        <section class="about-me" id="about">
+            <h2 class="section__title section__title--about">Who I am</h2>
+            <p class="section__subtitle section__subtitle--about">fornt-end developer based in Redmond, WA</p>
+            <div class="about-me__body">
+                <p>Hello, my name is Ari. My passion for programming originated from being a gaming enthusiast. I was amazed how unique virtual worlds 
+                    with their own layout, sounds, physics, animations, and graphics could be easily created simply from coding. This showed me that programming has 
+                    infinite potential and that anything is possible through code. My goal is to harnass that potential and create useful and
+                    elegant applications that will help people in the real world.
+                </p>
+            </div>
+            <img src="img/Evenston.jpg" alt="Visit to Evenston" class="about-me__img">
+        </section>
+        <!--My work-->
+        <section class="my-work" id="work">
+            <h2 class="section__title">Portfolio</h2>
+            <p class="section__subtitle section__subtitle--work">A showcase of my programming knowledge</p>
+            <div class="portfolio">
+                <a href="Capitol-Coffee-Co.html" class="portfolio__item">
+                    <img src="img/Capitol-Coffee-Co.png" class="portfolio__img">
+                </a>
+                <a href="Calorite-Counter.html" class="portfolio__item">
+                    <img src="img/Calorie-Tracker.png" class="portfolio__img">
+                </a>
+                <a href="#" class="portfolio__item">
+                    <img src="portfolio" class="portfolio__img">
+                </a>
+            </div>
+        </section>
+        <footer class="footer">
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/arie-bolotin/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="mailto:abolotin88@gmail.com">
+                        <i class="fa fa-envelope"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/SouthernGun">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        <script src="js/index.js"></script>
+    </body>
+</html>
