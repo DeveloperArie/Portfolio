@@ -382,6 +382,11 @@ header {
     background: var(--clr-accent);
     overflow: hidden;
 }
+.portfolio__item img {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
 
 .portfolio__img {
     transition: 

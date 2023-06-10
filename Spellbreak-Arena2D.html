@@ -46,16 +46,14 @@
             <p>
                 Although the game worked in single player, I wanted to try to make it multiplayer as it would be hard for 2 people to play on one computer. After this decision, 
                 I learned that I had to restructure the whole architecture and assign roles to what the server should be doing 
-                along with the client. To implement this communication I used Socket.io and Express. I set it up so that the client would listent to user events and share them
+                along with the client. To implement this communication I used Socket.io and Express. I set it up so that the client would listen to user events and share them
                 with the server through designated sockets. The server would take that data, run it through the games logic, and then update the rest of the clients
                 with a tick rate of about 33. This means it would be sending 33 updates per second. Finally, the client side would render everything using canvas for that specific client by using
-                socket ID's. I encountered a few bugs such as my collision detection breaking. I wasn't sure why this was because I was checking for every player in the game but after 
-                some debugging I realized that every client needs to check for its own collisions as well due to server-client structure. This showed me how
-                important it is to have a proper archtecture when dealing with servers. I had a lot fun making this game and it showed me the potential there is in combining front-end
-                and back-end for creating applications.
+                socket ID's. To make the game more interactive, I added animated sprites along with sound effects. I learned that having a proper arctecture when dealing wiht a full-stack application is 
+                key for avoiding bugs and simpler coding.
             </p>
 
-            <p>Check out my site on netlify: <a href="https://tranquil-starship-00cc64.netlify.app/">Spellbreak Arena 2D Multiplayer</a></p>
+            <p>Check out my site: <a href="https://spellbreak2d.ariebolotin.com/">Spellbreak Arena 2D Multiplayer</a></p>
         </div>
 
         <footer class="footer">
