@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>DevAri</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" 
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" /> 
+        <link href="https://fonts.googleapis.com/css2?family=Electrolize&family=Poppins&family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo"><a href="index.html" class="logo__link">Ari.js</a></div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <section class="intro">
+            <h1 class="section__title section__title--intro">
+                <strong> FlashCardQuizzer </strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Virtual flashcard app for studying</p>
+            <img src="img/Flash-Card-Quizzer.png" alt="Diplay of a users decks" class="intro__img">
+        </section>
+
+        <div class="portfolio-item-individual">
+            <p>
+                With this application I tried to use the MERN stack approach to creating a fullstack application. I started by creating a mongo database on mongodb.com. I created 2 schemas. 
+                One was for the decks which contained the title and the cards for each specific deck. The other schema was for storing user information such as username and password. Using mongoose,
+                I connected my server to the database and was able to manipulate the database through server side code. I created a controllers folder where I stored async functions that would listen for 
+                client requests and then post, get, or delete data from the mongo database.
+            </p>
+            <p>
+                On the client side, I created an API folder to store async functions that would allow the user to interact with the RESTful API by using the 'POST',
+                'GET', and 'DELETE' methods at the specified endpoints. The client would make requests using these methods to the API which would then fetch the correct data from the specified endpoints
+                to ship back to the client. To display this data, I created a Decks component which would display all the available decks from the database. I also made a Deck component which would
+                do the same thing with the cards. For better user experience, I styled these components with CSS grid and allowed the user to create or delete decks from the UI. Finally, I made a login 
+                and registration page so that each user could be authorized and have access to their own decks when they log in. 
+            </p>
+            <p>
+                The way I went about the authorization process was to add authorization headers to the api endpoints that required them. I then used a middleware function and JWT (or jsonwebtoken) so that 
+                a user could only access the specified endpoint if they had the required JWT token. I used the CreateContext hook from React to pass the token around the app and check where the user would be authorized. Finally,
+                I used the BrowserRouter hook from React so that I can quickly navigate to the desired endpoints. Overall, I enjoyed making this app and am happy that I got exposed to alot of new concepts as well 
+                learned how all of these technologies can combine together to create a useful product.   
+
+            </p>
+            <p>Check out my site on netlify: <a href="https://bright-blancmange-382f2d.netlify.app/">Calaorie-Tracker</a></p>
+        </div>
+
+        <footer class="footer">
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/arie-bolotin/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="mailto:abolotin88@gmail.com">
+                        <i class="fa fa-envelope"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/SouthernGun">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        <script src="js/index.js"></script>
+    </body>
+</html>

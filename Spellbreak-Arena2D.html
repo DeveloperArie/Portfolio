@@ -30,7 +30,7 @@
             <h1 class="section__title section__title--intro">
                 <strong> Spellbreak Arena 2D </strong>
             </h1>
-            <p class="section__subtitle section__subtitle--intro">A 2D arena game</p>
+            <p class="section__subtitle section__subtitle--intro">A 2D multiplayer arena game</p>
             <img src="img/Spellbreak-Arean2D.png" alt="Screenshot of spellbreak game" class="intro__img">
         </section>
 
@@ -49,9 +49,15 @@
                 along with the client. To implement this communication I used Socket.io and Express. I set it up so that the client would listen to user events and share them
                 with the server through designated sockets. The server would take that data, run it through the games logic, and then update the rest of the clients
                 with a tick rate of about 33. This means it would be sending 33 updates per second. Finally, the client side would render everything using canvas for that specific client by using
-                socket ID's. To make the game more interactive, I added animated sprites along with sound effects. I learned that having a proper arctecture when dealing wiht a full-stack application is 
+                socket ID's. To make the game more interactive, I added animated sprites along with sound effects. I learned that having a proper architecture when dealing with a full-stack application is 
                 key for avoiding bugs and simpler coding.
             </p>
+            <p>
+                There is a lot more I could have added to this game to improve it but felt it getting quite complicated so I decided to leave it as is. Some aspirations I had were to add Socket.io rooms. This 
+                would allow multiple rooms with specific ID's so that it would be playable by as many people the server could handle. Since I didn't use rooms, the game is currently only available 
+                to the first 2 people who joined the server. Another aspiration I have for the future is to improve optimization. Right now, the game is super laggy because I am sending a lot of unnecassary 
+                data. I learned that one way to improve optimization is to first send an initialization package and then send an update package which only sends the difference between the two. Hopefully, I will be 
+                able to add these features and more as I learn more about the backend. 
 
             <p>Check out my site: <a href="https://spellbreak2d.ariebolotin.com/">Spellbreak Arena 2D Multiplayer</a></p>
         </div>
