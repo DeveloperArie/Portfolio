@@ -140,6 +140,7 @@ header {
     font-weight: var(--fw-bold);
     font-size: var(--fs-h3);
     color: var(--clr-light);
+    z-index: 999;
 }
 
 .logo__link {
